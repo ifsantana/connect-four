@@ -99,6 +99,7 @@ public class ConnectFourGame {
         for (int row = 5; row >= 0; row--) {
             if (board[row][column] == ' ') {
                 board[row][column] = currentPlayer.getId();
+                switchPlayer();
                 return this;
             }
         }

@@ -39,7 +39,6 @@ public class ConnectFourService {
                     + System.getProperty("line.separator")
                     + getBoardState());
         } else {
-            game.switchPlayer();
             return ResponseEntity.ok(
                 "Move made. It's now Player "
                     + game.getCurrentPlayer().getId()
