@@ -111,5 +111,5 @@ Now that you know the rules, get ready for some exciting gameplay! The player wh
 
 ### Instructions
 
-1. Start a new game or restart a existing game performing a request to `POST /api/v1/connect-four`: Creates a new game.
-2. Each play should make a move using this endpoint: `PATCH /api/v1/connect-four/make-move/{column}`: Makes a move by specifying the column number.
+1. Start a new game or restart a existing game performing a request to `POST /api/v1/connect-four`
+2. Each play should make a move using this endpoint choosing the column and passing as parameter: `PATCH /api/v1/connect-four/make-move/{column}`
