@@ -1,1 +1,16 @@
+version: '2'
 services:
+  connect-four-server:
+    container_name: connect-four
+    build:
+      context: connect-four
+      dockerfile: Dockerfile
+    image: flaubert165/connect-four:latest
+    ports:
+      - 9002:8080
+    networks:
+      - spring-cloud-network
+networks:
+  spring-cloud-network:
+    driver: bridge
+

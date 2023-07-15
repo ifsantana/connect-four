@@ -1,4 +1,6 @@
-FROM ubuntu:latest
+FROM openjdk:17-jdk-alpine
 LABEL authors="italosantana"
-
-ENTRYPOINT ["top", "-b"]
+MAINTAINER github.com/ifsantana
+COPY target/connect-four-0.0.1-SNAPSHOT.jar connect-four-0.0.1.jar
+EXPOSE 8080
+ENTRYPOINT ["java","-jar","/connect-four-0.0.1.jar"]
