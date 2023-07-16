@@ -36,7 +36,7 @@ public class ConnectFourGame {
     }
 
     public boolean checkForAWinBottomLeftTopRight() {
-        for (int row = 3; row < 6; row++) {
+        for (int row = 3; row < NUMBER_OF_ROWS; row++) {
             for (int col = 0; col < 4; col++) {
                 if (board[row][col] != ' ' &&
                     board[row][col] == board[row - 1][col + 1] &&
@@ -65,7 +65,7 @@ public class ConnectFourGame {
 
     public boolean checkForAWinVertically() {
         for (int row = 0; row < 3; row++) {
-            for (int col = 0; col < 7; col++) {
+            for (int col = 0; col < NUMBER_OF_COLUMNS; col++) {
                 if (board[row][col] != ' ' &&
                     board[row][col] == board[row + 1][col] &&
                     board[row][col] == board[row + 2][col] &&
@@ -78,7 +78,7 @@ public class ConnectFourGame {
     }
 
     public boolean checkForAWinHorizontally() {
-        for (int row = 0; row < 6; row++) {
+        for (int row = 0; row < NUMBER_OF_ROWS; row++) {
             for (int col = 0; col < 4; col++) {
                 if (board[row][col] != ' ' &&
                     board[row][col] == board[row][col + 1] &&
