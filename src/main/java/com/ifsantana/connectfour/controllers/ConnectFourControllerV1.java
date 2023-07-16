@@ -4,6 +4,7 @@ import com.ifsantana.connectfour.exceptions.FullColumnException;
 import com.ifsantana.connectfour.exceptions.GameNotStartedException;
 import com.ifsantana.connectfour.exceptions.InvalidMoveException;
 import com.ifsantana.connectfour.services.ConnectFourService;
+import com.ifsantana.connectfour.services.ConnectFourServiceImpl;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;

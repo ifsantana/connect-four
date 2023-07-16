@@ -11,7 +11,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
 @AutoConfigureMockMvc
-public class ConnectFourRepositoryIT {
+class ConnectFourRepositoryIT {
     @Autowired
     private ConnectFourRepository connectFourRepository;
 

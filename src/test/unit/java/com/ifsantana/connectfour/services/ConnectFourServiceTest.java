@@ -3,10 +3,8 @@ package com.ifsantana.connectfour.services;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
-import static org.mockito.Mockito.when;
 
-import com.ifsantana.connectfour.entities.ConnectFourGame;
-import com.ifsantana.connectfour.repositories.ConnectFourRepository;
+import com.ifsantana.connectfour.repositories.ConnectFourRepositoryImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -15,7 +13,7 @@ class ConnectFourServiceTest {
 
   @BeforeEach
   void setup() {
-    connectFourService = new ConnectFourService(new ConnectFourRepository());
+    connectFourService = new ConnectFourServiceImpl(new ConnectFourRepositoryImpl());
   }
 
   @Test

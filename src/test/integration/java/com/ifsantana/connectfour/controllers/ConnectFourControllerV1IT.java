@@ -31,7 +31,7 @@ class ConnectFourControllerV1IT {
   void testGetBoard() throws Exception {
     mockMvc.perform(MockMvcRequestBuilders.get("/api/v1/connect-four"))
         .andExpect(MockMvcResultMatchers.status().isOk())
-        .andExpect(MockMvcResultMatchers.content().contentType("text/plain;charset=UTF-8"));
+        .andExpect(MockMvcResultMatchers.content().contentType("text/plain;charset=ISO-8859-1"));
   }
 
   @Test
