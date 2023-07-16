@@ -63,7 +63,6 @@ public class ConnectFourGame {
         return false;
     }
 
-    // just 3 rows to avoid throw ArrayIndexOutOfBoundsException (because the conditional)
     public boolean checkForAWinVertically() {
         for (int row = 0; row < 3; row++) {
             for (int col = 0; col < 7; col++) {
@@ -78,7 +77,6 @@ public class ConnectFourGame {
         return false;
     }
 
-    // just 4 columns to avoid throw ArrayIndexOutOfBoundsException (because the conditional)
     public boolean checkForAWinHorizontally() {
         for (int row = 0; row < 6; row++) {
             for (int col = 0; col < 4; col++) {
